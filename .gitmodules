@@ -1,0 +1,3 @@
+[submodule "deps/core"]
+	path = deps/core
+	url = https://github.com/SweetCandyShop/CandyShop.Core
