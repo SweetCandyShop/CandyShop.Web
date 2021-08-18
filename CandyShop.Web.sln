@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandyShop.Web", "src\CandyShop.Web\CandyShop.Web.csproj", "{C089F1C3-CDC3-41BA-AC1D-88B1346C6DF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CandyShop.Web", "src\CandyShop.Web\CandyShop.Web.csproj", "{C089F1C3-CDC3-41BA-AC1D-88B1346C6DF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CandyShop.Core", "deps\CandyShop.Core\src\CandyShop.Core\CandyShop.Core.csproj", "{7FDE6737-B6F7-4DDE-B0F0-AC18C5073139}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CandyShop.Infrastructure", "deps\CandyShop.Core\src\CandyShop.Infrastructure\CandyShop.Infrastructure.csproj", "{3E0137F2-DD80-4686-A9F8-2C3D6CE3BB9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C089F1C3-CDC3-41BA-AC1D-88B1346C6DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C089F1C3-CDC3-41BA-AC1D-88B1346C6DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C089F1C3-CDC3-41BA-AC1D-88B1346C6DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FDE6737-B6F7-4DDE-B0F0-AC18C5073139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FDE6737-B6F7-4DDE-B0F0-AC18C5073139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FDE6737-B6F7-4DDE-B0F0-AC18C5073139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FDE6737-B6F7-4DDE-B0F0-AC18C5073139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E0137F2-DD80-4686-A9F8-2C3D6CE3BB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0137F2-DD80-4686-A9F8-2C3D6CE3BB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0137F2-DD80-4686-A9F8-2C3D6CE3BB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0137F2-DD80-4686-A9F8-2C3D6CE3BB9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
