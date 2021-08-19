@@ -1,0 +1,31 @@
+﻿@model CreateUserViewModel
+@inject RoleManager<IdentityRole> roleManager
+
+@{ 
+    var roles = roleManager.Roles.Select(role => role.Name).ToList();
+    roles.Add("");
+    roles.Sort();
+ }
+
+<h1>Create User</h1>
+<form asp-action="Create" asp-controller="User">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <div>
+            @Html.LabelFor(x => x.Email)
+            @Html.TextBoxFor(x => x.Email)
+            @Html.ValidationMessageFor(x => x.Email)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Password)
+            @Html.PasswordFor(x => x.Password)
+            @Html.ValidationMessageFor(x => x.Password)
+        </div>
+        <div> 
+            @Html.LabelFor(x => x.RoleName)
+            <select asp-for="RoleName" asp-items="new SelectList(roles)">
+            </select>
+        </div>
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
